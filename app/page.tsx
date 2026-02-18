@@ -75,11 +75,14 @@ export default function Home() {
         setLogoUrl(config.logo);
         setSiteName(config.name);
         setBgStyle({
-          background: `rgba(0, 0, 0, 0.04) url(${config.bg})`,
+          backgroundImage: `url(${config.bg})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-          // Original did not specify position, defaulting to top-left.
-          // Removed backgroundPosition: "center" which was likely causing the misalignment.
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          width: "100vw",
+          height: "100vh",
+          margin: "0",
+          overflow: "hidden" // Optional to ensure no scrollbars from the background container itself
         });
 
         // Update favicon
