@@ -1,0 +1,124 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: rgba(0, 0, 0, 0.04);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-contain {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 80px auto;
+}
+
+.logbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.logbox span {
+  font-size: 29px;
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.sign-p {
+  text-align: center;
+  margin: 0 18px;
+  margin-top: 50px;
+}
+
+.sign-p p {
+  color: #717171;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.signform {
+  padding: 0 30px;
+  margin-top: 30px;
+}
+
+.inpg input {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #e8e7e7;
+  font-family: inherit;
+  padding: 13px 10px;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.inpg input:focus {
+  outline: none;
+}
+
+.inp2b {
+  text-align: center;
+}
+
+.inp2b button {
+  display: inline-block;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  height: 45px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.inp2b button:hover {
+  color: #ccc;
+}
+
+.inp2b button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.foot-img {
+  text-align: center;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  min-height: 20px;
+  /* To prevent jump when empty */
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 569px) {
+  body {
+    height: 100vh;
+  }
+
+  .main-contain {
+    width: 90%;
+  }
+}
